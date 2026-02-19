@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--
+        About & Gallery Page
+        Coastal Breeze Guest House
+        CO5078 Web Development Module
+        Author: Theeksha Akirna Wijerathne
+        Year: 2026
+    -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Coastal Breeze Guest House</title>
+
+    <!-- External CSS File -->
     <link rel="stylesheet" href="root/style.css">
 </head>
 
 <body>
 
+    <!-- =========================
+         Header & Navigation
+         ========================= -->
     <header>
         <h1>Coastal Breeze Guest House</h1>
+
+        <!-- Navigation Menu -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,8 +36,12 @@
         </nav>
     </header>
 
+    <!-- =========================
+         Main Content
+         ========================= -->
     <main>
 
+        <!-- About Section -->
         <section class="about-box">
 
             <h2>About Coastal Breeze Guest House</h2>
@@ -34,7 +54,7 @@
 
         </section>
 
-
+        <!-- Gallery Introduction Section -->
         <div class="gallery-intro">
             <h2>Discover Coastal Comfort</h2>
             <p>
@@ -44,39 +64,43 @@
             </p>
         </div>
 
-
+        <!-- Image Gallery Section -->
         <section class="gallery">
 
+            <!-- Image source: AI-generated / stock image (2026) -->
             <div class="gallery-item">
                 <img src="images/exterior.jpg" alt="Guest House Exterior">
                 <div class="overlay">Exterior View</div>
             </div>
 
+            <!-- Image source: AI-generated / stock image (2026) -->
             <div class="gallery-item">
-                <img src="images/room.jpg" alt="Guest Room">
+                <img src="images/room.jpg" alt="Guest Room Interior">
                 <div class="overlay">Comfortable Room</div>
             </div>
 
+            <!-- Image source: AI-generated / stock image (2026) -->
             <div class="gallery-item">
-                <img src="images/beach.jpg" alt="Nearby Beach">
+                <img src="images/beach.jpg" alt="Cornwall Beach View">
                 <div class="overlay">Nearby Beach</div>
             </div>
 
         </section>
 
-
     </main>
 
-
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Coastal Breeze Guest House | Cornwall, UK</p>
     </footer>
 
-    <script src="root/script.js"></script>
+    <!-- Lightbox Container for Image Preview -->
     <div id="lightbox" class="lightbox">
-        <img id="lightbox-img">
+        <img id="lightbox-img" alt="Expanded gallery image">
     </div>
 
+    <!-- External JavaScript File -->
+    <script src="root/script.js"></script>
 
 </body>
 </html>

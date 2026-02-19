@@ -1,16 +1,32 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--
+        Contact Page
+        Coastal Breeze Guest House
+        CO5078 Web Development Module
+        Author: Theeksha Akirna Wijerathne
+        Year: 2026
+    -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Coastal Breeze Guest House</title>
+
+    <!-- External CSS File -->
     <link rel="stylesheet" href="root/style.css">
 </head>
 
 <body>
 
+    <!-- =========================
+         Header & Navigation
+         ========================= -->
     <header>
         <h1>Coastal Breeze Guest House</h1>
+
+        <!-- Navigation Menu -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,50 +35,72 @@
             </ul>
         </nav>
 
+        <!-- Theme Toggle Button -->
         <button id="themeToggle">🌙</button>
     </header>
 
+    <!-- =========================
+         Main Content
+         ========================= -->
     <main>
 
-        <h2>Contact Us</h2>
+        <!-- Contact Section -->
+        <section class="contact-box">
 
-        <p class="contact-subtitle">
-            We would love to hear from you. Whether you have a question,
-            need more information, or wish to make a reservation,
-            please send us a message and our team will respond shortly.
-        </p>
+            <h2>Contact Us</h2>
 
+            <p class="contact-subtitle">
+                We would love to hear from you. Whether you have a question,
+                need more information, or wish to make a reservation,
+                please send us a message and our team will respond shortly.
+            </p>
 
-        <form id="contactForm">
+            <!-- Contact Form -->
+            <form id="contactForm">
 
-            <input type="text" placeholder="Your Name" required>
+                <!-- Name Input -->
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Email Address" required>
+                <!-- Email Input -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email Address" required>
 
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+                <!-- Message Input -->
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
 
-        </form>
-        <h2>Find Us</h2>
+            </form>
 
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps?q=Cornwall,UK&output=embed"
-                    width="100%"
-                    height="350"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy">
-            </iframe>
-        </div>
+        </section>
 
+        <!-- Location Map Section -->
+        <section>
+            <h2>Find Us</h2>
+
+            <div class="map-container">
+                <!-- Embedded Google Map (Cornwall Location) -->
+                <iframe src="https://www.google.com/maps?q=Cornwall,UK&output=embed"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+        </section>
 
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Coastal Breeze Guest House | Cornwall, UK</p>
     </footer>
 
+    <!-- External JavaScript File -->
     <script src="root/script.js"></script>
 
 </body>
