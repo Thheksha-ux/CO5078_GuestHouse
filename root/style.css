@@ -384,10 +384,11 @@ section {
 		display: block;
 	}
 
-	.testimonial h4 {
-		margin-top: 10px;
-		color: #005f73;
-	}
+.testimonial-name {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #005f73;
+}
 
 .about-box {
 	background-color: white;
