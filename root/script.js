@@ -25,20 +25,36 @@ images.forEach(img => {
 		lightboxImg.src = img.src;
 	});
 });
+document.addEventListener("DOMContentLoaded", function () {
 
-lightbox.addEventListener("click", () => {
-	lightbox.style.display = "none";
+    /* =========================
+       Lightbox Functionality
+       ========================= */
+
+    const lightbox = document.getElementById("lightbox");
+
+    if (lightbox) {
+        lightbox.addEventListener("click", function () {
+            lightbox.style.display = "none";
+        });
+    }
+
+    /* =========================
+       Testimonial Slider
+       ========================= */
+
+    const testimonials = document.querySelectorAll(".testimonial");
+    let tIndex = 0;
+
+    if (testimonials.length > 0) {
+        setInterval(function () {
+            testimonials[tIndex].classList.remove("active");
+            tIndex = (tIndex + 1) % testimonials.length;
+            testimonials[tIndex].classList.add("active");
+        }, 5000);
+    }
+
 });
-let testimonials = document.querySelectorAll(".testimonial");
-let tIndex = 0;
-
-function changeTestimonial() {
-	testimonials[tIndex].classList.remove("active");
-	tIndex = (tIndex + 1) % testimonials.length;
-	testimonials[tIndex].classList.add("active");
-}
-
-setInterval(changeTestimonial, 5000);
 
 // Contact form message
 
