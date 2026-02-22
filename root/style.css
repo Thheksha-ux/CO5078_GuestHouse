@@ -368,6 +368,11 @@ section {
 	overflow: hidden;
 	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+	.map-container iframe {
+		width: 100%;
+		height: 350px;
+		display: block;
+	}
 .testimonials {
 	text-align: center;
 	background: #f1f7fb;
@@ -504,3 +509,15 @@ section {
 		padding: 20px;
 	}
 
+/* Accessibility helper: screen-reader only heading */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
